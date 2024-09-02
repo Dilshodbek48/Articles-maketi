@@ -1,0 +1,249 @@
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family:"Roboto condensed", "Roboto", "Arial", sans-serif;
+  color: #888;
+  letter-spacing: 2px;
+
+}
+
+*:focus {
+  outline: 2px dotted #1e90ff;
+  outline-offset: 3px;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MAIN */
+.main {
+  display: flex;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 782px;
+  background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.hero-content {
+  width: 245px;
+  height: 130px;
+}
+
+.hero-heading {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Bebas neue", "Roboto condensed", "Roboto", "Arial", sans-serif;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.button {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+.hero-button {
+  padding: 12px 24px;
+  border: 0;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+.download-button {
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+}
+
+.button-content::before {
+  display: inline-block;
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/Vector.png);
+  content: "";
+}
+
+.button-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Bebas neue", "Roboto condensed", "Roboto", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* MAIN-SECTION */
+.main-section {
+  width: 600px;
+  padding: 54px;
+}
+.main-content {
+}
+
+.main-content-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #222;
+  font-size: 24px;
+  font-family: "Bebas neue", "Roboto condensed", "Roboto", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.main-hr {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #999;
+}
+
+.main-section-list {
+  margin-bottom: 23px;
+}
+
+/* ARTICLE-CARD */
+
+.artical-card {
+  display: flex;
+}
+
+.artical-card:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.article-card-img {
+  width: 160px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.article-card-content {
+  padding: 16px 16px 13px;
+}
+
+.article-card-heading {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.article-card-link {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Bebas neue", "Roboto condensed", "Roboto", "Arial", sans-serif;
+  color: #222;
+}
+
+.article-card-link:hover {
+  color: #1e90ff;
+}
+
+.article-card-link:active {
+  opacity: 0.6;
+}
+
+.article-footer {
+  display: flex;
+  letter-spacing: 0;
+}
+
+.article-card-time {
+  display: flex;
+  align-items: center;
+}
+
+.article-card-time::before {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background-image: url(../img/clock.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: "";
+}
+
+.article-footer-time-text {
+  margin-right: 21px;
+}
+
+.article-card-seen {
+  display: flex;
+  align-items: center;
+}
+
+.article-card-seen::before {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background-image: url(../img/eye.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: "";
+}
+
+
+
+
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx)
+  {
+    .hero{
+      background-image: url(../img/hero@2x.png);
+    }
+
+    .button-content::before {
+      background-image: url(../img/Vector@2x.png);
+    }
+
+    .article-card-time::before {
+      background-image: url(../img/clock@2x.png);
+    }
+
+    .article-card-seen::before {
+      background-image: url(../img/eye@2x.png);
+    }
+  }
